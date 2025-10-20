@@ -12,3 +12,4 @@ build/
 *.pyo
 *.spec
 *.exe
+!requirements.txt
