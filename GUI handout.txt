@@ -1,0 +1,241 @@
+# Bossu Student Dashboard – Enhanced Lesson Handout
+
+---
+
+## 1. Lesson Objective
+
+By the end of this lesson, students will be able to:
+
+1. Create a GUI app using **Tkinter**.
+2. Load, add, delete, and sort student records.
+3. Understand **event-driven programming** in GUI apps.
+4. Persist data to a text file and update the GUI dynamically.
+
+---
+
+## 2. Project Overview
+
+The **Bossu Student Dashboard** allows users to:
+
+* Add student details (Name, Age, Grade)
+* Delete selected students
+* Sort by Age, Grade, or Grade + Age
+* See updates in **real-time** in the table
+* Track actions via **Status Bar**
+
+**Example Table View:**
+
+| Name    | Age | Grade |
+| ------- | --- | ----- |
+| Janet   | 29  | A     |
+| Sean    | 30  | B     |
+| Collins | 22  | C     |
+
+---
+
+## 3. File Structure
+
+```
+python_projects/
+├── file_sorting_gui_v3.py    # Main Python GUI script
+├── students.txt              # Stores student records
+├── dist/                     # Compiled .exe files
+└── build/                    # Temporary files for PyInstaller
+```
+
+* `students.txt` stores records as CSV:
+  Example content:
+
+  ```
+  Janet,29,A
+  Sean,30,B
+  Collins,22,C
+  ```
+
+---
+
+## 4. GUI Layout Diagram
+
+```
++-------------------------------------------------------------+
+| Bossu Student Dashboard                                     |
++-------------------------------------------------------------+
+| Name: [______] Age: [__] Grade: [__] [Add Student]         |
++-------------------------------------------------------------+
+| Table (Treeview)                                           |
+| +-------+-----+-------+                                    |
+| | Name  | Age | Grade |                                    |
+| +-------+-----+-------+                                    |
+| | ...   | ... | ...   |                                    |
+| +-------+-----+-------+                                    |
++-------------------------------------------------------------+
+| [Delete Selected] [Sort by Age] [Sort by Grade] [Sort by Grade+Age] |
++-------------------------------------------------------------+
+| Status Bar: Ready.                                         |
++-------------------------------------------------------------+
+```
+
+* **Top header:** App title
+* **Input row:** Name, Age, Grade, Add button
+* **Table:** Treeview for students
+* **Button row:** Delete + Sorting buttons
+* **Status Bar:** Shows current operation
+
+---
+
+## 5. Data Flow Diagram
+
+```
+User Input --> Button Click --> Function Execution --> Table Refresh
+                                        |
+                                        v
+                                Update students.txt
+                                        |
+                                        v
+                               Status Bar Message
+```
+
+* User interacts via **buttons**
+* Functions handle **logic** (add, delete, sort)
+* Table refresh ensures **GUI matches data file**
+* Status bar shows **feedback messages**
+
+---
+
+## 6. Key Python Concepts
+
+| Concept                    | Explanation                                                          |
+| -------------------------- | -------------------------------------------------------------------- |
+| `Tkinter`                  | Used to create GUI widgets like buttons, labels, entries, and tables |
+| `ttk.Treeview`             | Table-like widget to display student records                         |
+| `StringVar()`              | Holds input values for dynamic updating                              |
+| `messagebox.showwarning()` | Pop-up alert for invalid input or errors                             |
+| `os.path.exists()`         | Checks if data file exists                                           |
+| `lambda`                   | Used for sorting lists by key                                        |
+| `Event-driven programming` | Button click triggers specific function calls                        |
+
+---
+
+## 7. Example Python Functions
+
+**Add Student**
+
+```python
+def add_student():
+    ...
+```
+
+**Delete Student**
+
+```python
+def delete_student():
+    ...
+```
+
+**Sort by Age**
+
+```python
+def sort_by_age():
+    ...
+```
+
+**Refresh Table**
+
+```python
+def refresh_table():
+    ...
+```
+
+---
+
+## 8. Application Walkthrough
+
+### Step 1 – Add Students
+
+1. Enter `Name`, `Age`, `Grade`
+2. Click **Add Student**
+3. Student appears in **Treeview**
+4. Status bar updates: `Student John added and sorted by age.`
+
+### Step 2 – Delete Students
+
+1. Select row(s) in the table
+2. Click **Delete Selected**
+3. Row is removed and file updates
+4. Status bar: `Deleted selected record(s).`
+
+### Step 3 – Sorting
+
+* **Sort by Age:** Ascending age
+* **Sort by Grade:** Alphabetical grade
+* **Sort by Grade + Age:** Descending age for same grade
+* Status bar updates with sorting action
+
+---
+
+## 9. Running the App
+
+### Option 1: Run via Python
+
+```bash
+python file_sorting_gui_v3.py
+```
+
+### Option 2: Run as Executable
+
+1. Compile using PyInstaller:
+
+```bash
+pyinstaller --clean --noconfirm --onefile --windowed --name "Bossu_Dashboard_Edition" file_sorting_gui_v3.py
+```
+
+2. Run `Bossu_Dashboard_Edition.exe` from `dist/`
+
+---
+
+## 10. Exercises for Students
+
+1. Add 5–10 student records
+2. Sort by Age, Grade, and Grade + Age
+3. Delete 2 students and verify file updates
+4. Try entering invalid data (e.g., letters in Age) and see error handling
+
+---
+
+## 11. Discussion Points
+
+* Why do we use **StringVar** for GUI input?
+* How does **Treeview** help visualize data?
+* Why is **file persistence** important?
+* What is the difference between **sorting by Age vs Grade + Age**?
+
+---
+
+## 12. Visual Summary
+
+```
+[Input Fields] + [Add Button]
+          |
+          v
+   [Treeview Table] <--> [students.txt]
+          |
+          v
+   [Action Buttons] --> Sorting / Deleting
+          |
+          v
+   [Status Bar Feedback]
+```
+
+---
+
+## ✅ Key Takeaways
+
+1. Tkinter allows building **interactive GUIs**.
+2. Event-driven programming enables **buttons to trigger actions**.
+3. Data persistence ensures **records are saved and reused**.
+4. Sorting and filtering can be done **dynamically** with Python lists.
+5. Status messages give **real-time feedback** to users.
+
+---
+
+*End of Handout*

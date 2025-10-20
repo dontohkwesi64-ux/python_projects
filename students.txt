@@ -1,0 +1,15 @@
+Abena,17,72
+Grace Tetteh,18,A
+Kofi,18,95
+Janet Mensah,19,A
+Linda Asante,19,A
+Ama,19,82
+Mary Addo,20,B
+Richmond Amankwah,20,B
+Kwame,20,60
+Collins Boateng,21,B
+Yaw,21,55
+Sean K. Owusu,22,C
+Akua Serwah,22,C
+Kwame Ofori,23,D
+Joseph Appiah,24,F

@@ -1,0 +1,76 @@
+
+     Boss Student Search Edition
+     
+    def search_statement():
+    query = search_var.get().strip().lower()
+    if not query:
+    refresh_table()    # show all if empty
+    update_status("show all students.")
+    return
+
+    results = [s for s in students if query ins["name"].lower()]
+
+    # Clear table first
+     for row in tree.get_children():
+           tree.delete(row)
+   
+      for s in results:
+           tree.insert("", "end", values=(s["name"], s["age"], s["grade"]))
+        
+           update_status(f"Found {len(results)} result(s) for "{query}".")
+
+
+          # --- Search Frame ---
+  frame_search = tk.Frame(root, bg="#f0f4f7", pady=5)   
+  frame_search.pack(fill="x")
+
+  search_var = tk.StringVar()
+  tk.Label(frame_search, text="Search Name:", bg="#f0f4f7").grid(row=0, column=0, padx=5)
+  tk.Entry(frame_search, textvariable=search_var, width=20).grid(row=0, column=1, padx=5)
+  tk.Button(frame_search, text="Search", command=search_student, bg="#2b5797", fg="white").grid(row=0, column=2, padx=10)
+
+   def search_student():
+    name_to_find = search_var.get().strip()
+    
+    # Check if the input is empty
+    if not name_to_find:
+        messagebox.showwarning("Input Error", "Enter a name to search!")
+        return
+    
+    # Loop through your students list
+    found_students = []
+    for s in students:
+        if s["name"].lower() == name_to_find.lower():
+            found_students.append(s)
+    
+    # Show the result
+    if found_students:
+        # Highlight or display the student(s) in the table
+        # (Hint: you can delete existing rows and insert only the found ones)
+        pass
+    else:
+        messagebox.showinfo("Search Result", f"No student found with name '{name_to_find}'.")
+
+
+
+   def search_student():
+    query = search_var.get().strip().lower()
+    if not query:
+        refresh_table()  # show all if empty
+        update_status("Showing all students.")
+        return
+    
+    results = [s for s in students if query in s['name'].lower()]
+    
+    # Clear table first
+    for row in tree.get_children():
+        tree.delete(row)
+    
+    for s in results:
+        tree.insert("", "end", values=(s['name'], s['age'], s['grade']))
+    
+    update_status(f"Found {len(results)} result(s) for '{query}'.")
+
+
+
+

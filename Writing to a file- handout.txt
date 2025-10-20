@@ -1,0 +1,130 @@
+Absolutely! Here’s a **concise and practical handout** for your revision and practice on Python file handling and basic sorting operations:
+
+---
+
+# **Python File Handling & Sorting — Revision Handout**
+
+## **1. Writing to a File**
+
+**Goal:** Create a file and write numbers or text to it.
+
+```python
+# step1_write_file.py
+# Open a file in write mode ('w'). Creates file if it doesn't exist.
+file = open("my_numbers.txt", "w")
+
+# Write numbers or lines
+file.write("10\n")
+file.write("5\n")
+file.write("8\n")
+file.write("20\n")
+file.write("1\n")
+
+# Close the file to save changes
+file.close()
+
+print("File created and numbers written successfully!")
+```
+
+**Key Notes:**
+
+* `"w"` mode overwrites existing content.
+* Always **close** the file to save changes.
+* Use `\n` for new lines.
+
+---
+
+## **2. Reading from a File**
+
+**Goal:** Read the contents line by line.
+
+```python
+# step2_read_file.py
+file = open("my_numbers.txt", "r")  # Open in read mode
+print("Numbers in the file:")
+
+for line in file:
+    print(line.strip())  # .strip() removes extra spaces or newline
+
+file.close()
+```
+
+**Key Notes:**
+
+* `"r"` mode = read only.
+* `.strip()` removes unwanted whitespace and `\n`.
+
+---
+
+## **3. Sorting Numbers from a File**
+
+**Goal:** Read numbers from a file, convert to integers, and sort.
+
+```python
+# step3_sort_numbers.py
+file = open("my_numbers.txt", "r")
+numbers = [int(line.strip()) for line in file]  # convert lines to int
+file.close()
+
+numbers.sort(reverse=True)  # Descending order
+print("Numbers sorted in descending order:", numbers)
+```
+
+**Key Notes:**
+
+* Use **list comprehension** for converting lines to integers.
+* `sort(reverse=True)` sorts in descending order.
+
+---
+
+## **4. Reading and Sorting Student Records**
+
+**Goal:** Sort students by age or other attributes from a CSV-style file.
+
+```python
+# sort_students_by_age.py
+file = open("student_records.txt", "r")
+students = [line.strip().split(",") for line in file]  # Split CSV data
+file.close()
+
+# Sort by age (descending)
+students.sort(key=lambda x: int(x[1]), reverse=True)
+
+print("--- Students Sorted by Age (Descending) ---")
+for name, age, grade in students:
+    print(f"Name: {name} | Age: {age} | Grade: {grade}")
+print("-------------------------------------------")
+```
+
+**Key Notes:**
+
+* `.split(",")` separates CSV fields.
+* `lambda x: int(x[1])` = sort by **second column (age)**.
+* `reverse=True` = descending order.
+
+---
+
+## **5. Practice Exercises**
+
+1. **Exercise 1:** Create a file `my_fruits.txt` and write 5 fruits to it. Then read and display them alphabetically.
+2. **Exercise 2:** Write 10 random numbers to a file and sort them in **ascending** order.
+3. **Exercise 3:** Create `students.txt` with fields `name,age,grade`. Sort by **grade** (A–F) alphabetically.
+4. **Exercise 4:** Modify the student sorting to sort **first by grade, then by age descending**.
+5. **Exercise 5:** Add a new student record to the file, keeping the records sorted by age.
+
+---
+
+**Pro Tip:** Always **close your files** or use the `with` statement to handle files safely:
+
+```python
+with open("my_numbers.txt", "r") as file:
+    numbers = [int(line.strip()) for line in file]
+```
+
+This automatically closes the file when done.
+
+---
+
+I can also **make a visual diagram showing file flow and sorting logic** next, which makes it super easy to understand and remember.
+
+Do you want me to create that diagram for this handout?

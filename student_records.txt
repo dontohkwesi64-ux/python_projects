@@ -1,0 +1,9 @@
+Sly,22,A
+Larry,24,B
+Jim,26,A
+Eve,25,A
+Janet,29,A
+Collins,28,B
+Kwesi,27,A
+Sean,30,B
+Kelly,23,C

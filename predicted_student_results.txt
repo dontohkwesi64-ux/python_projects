@@ -1,0 +1,135 @@
+
+============================================================
+Results recorded on: 2025-10-06 18:41:52
+
+Predicted Student Rankings:
+1. John — 100.00
+2. Abraham — 100.00
+3. Philip — 100.00
+4. Esther — 100.00
+5. Cassie — 100.00
+6. Jacob — 97.07
+7. Paul — 97.07
+8. Paulina — 97.07
+9. Jane — 97.07
+10. Opia — 91.29
+11. Anna — 91.29
+12. Kim — 91.29
+13. Isaac — 85.50
+14. Peter — 85.50
+15. Eliz — 85.50
+
+Average predicted score: 94.58
+Highest predicted scorer: John with 100.00
+Lowest predicted scorer: Isaac with 85.50
+
+
+============================================================
+Results recorded on: 2025-10-06 18:55:10
+
+Student Predicted Rankings:
+1. John — 100.00 (A, Excellent)
+2. Abraham — 100.00 (A, Excellent)
+3. Jacob — 100.00 (A, Excellent)
+4. Paul — 100.00 (A, Excellent)
+5. Philip — 100.00 (A, Excellent)
+6. Paulina — 100.00 (A, Excellent)
+7. Esther — 100.00 (A, Excellent)
+8. Cassie — 100.00 (A, Excellent)
+9. Jane — 100.00 (A, Excellent)
+10. Opia — 90.00 (A, Excellent)
+11. Anna — 90.00 (A, Excellent)
+12. Kim — 90.00 (A, Excellent)
+13. Isaac — 80.00 (B, Very Good)
+14. Peter — 80.00 (B, Very Good)
+15. Eliz — 80.00 (B, Very Good)
+
+Average predicted score: 94.00
+Highest predicted scorer: John with 100.00
+Lowest predicted scorer: Isaac with 80.00
+
+
+============================================================
+Results recorded on: 2025-10-06 19:30:28
+1. Isaac — 200.00 (A, Excellent)
+2. Cassie — 200.00 (A, Excellent)
+3. Kwame — 200.00 (A, Excellent)
+4. Boye — 200.00 (A, Excellent)
+5. Paulina — 190.00 (A, Excellent)
+6. Kojo — 190.00 (A, Excellent)
+7. Anna — 180.00 (A, Excellent)
+8. Kim — 180.00 (A, Excellent)
+9. Abraham — 170.00 (A, Excellent)
+10. Jane — 170.00 (A, Excellent)
+11. Jacob — 160.00 (A, Excellent)
+12. Eliz — 160.00 (A, Excellent)
+13. John — 150.00 (A, Excellent)
+14. Esther — 150.00 (A, Excellent)
+15. Yusif — 150.00 (A, Excellent)
+16. Peter — 140.00 (A, Excellent)
+17. Asare — 140.00 (A, Excellent)
+18. Philip — 130.00 (A, Excellent)
+19. Opia — 120.00 (A, Excellent)
+20. Paul — 110.00 (A, Excellent)
+
+Average predicted score: 164.50
+Highest predicted scorer: Isaac with 200.00
+Lowest predicted scorer: Paul with 110.00
+
+
+============================================================
+Results recorded on: 2025-10-06 19:44:37
+
+Student Rankings:
+1. Isaac — 20.00 (F, Fail)
+2. Cassie — 20.00 (F, Fail)
+3. Kwame — 20.00 (F, Fail)
+4. Boye — 20.00 (F, Fail)
+5. Paulina — 19.00 (F, Fail)
+6. Kojo — 19.00 (F, Fail)
+7. Anna — 18.00 (F, Fail)
+8. Kim — 18.00 (F, Fail)
+9. Abraham — 17.00 (F, Fail)
+10. Jane — 17.00 (F, Fail)
+11. Jacob — 16.00 (F, Fail)
+12. Eliz — 16.00 (F, Fail)
+13. John — 15.00 (F, Fail)
+14. Esther — 15.00 (F, Fail)
+15. Yusif — 15.00 (F, Fail)
+16. Peter — 14.00 (F, Fail)
+17. Asare — 14.00 (F, Fail)
+18. Philip — 13.00 (F, Fail)
+19. Opia — 12.00 (F, Fail)
+20. Paul — 11.00 (F, Fail)
+
+Average predicted score: 16.45
+Highest predicted scorer: Isaac with 20.00
+Lowest predicted scorer: Paul with 11.00
+
+
+============================================================
+Results recorded on: 2025-10-07 13:39:30
+1. Jimmy — 94.72 (A, Excellent)
+2. charles — 90.06 (A, Excellent)
+3. Luke — 76.06 (C, Good)
+4. Foster — 71.39 (C, Good)
+5. Ben — 80.73 (B, Very Good)
+6. Gilly — 85.39 (B, Very Good)
+7. Larry — 66.73 (D, Needs Improvement)
+8. Sean — 57.40 (F, Fail)
+9. Azaia — 94.72 (A, Excellent)
+10. Acquila — 94.72 (A, Excellent)
+11. Bruce — 85.39 (B, Very Good)
+12. Chuck — 90.06 (A, Excellent)
+13. Cassie — 80.73 (B, Very Good)
+14. Diana — 90.06 (A, Excellent)
+15. Donna — 90.06 (A, Excellent)
+16. Mary — 85.39 (B, Very Good)
+17. Eve — 80.73 (B, Very Good)
+18. Mavis — 85.39 (B, Very Good)
+19. Agie — 94.72 (A, Excellent)
+20. Precious — 80.73 (B, Very Good)
+
+Average predicted score: 83.76
+Highest predicted scorer:  Jimmy with 94.72
+Lowest predicted scorer: Sean with 57.40

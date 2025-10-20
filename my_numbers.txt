@@ -1,0 +1,4 @@
+C:\python_projects>python step1_write_file.py
+File created and numbers written successfully!
+
+C:\python_projects>
