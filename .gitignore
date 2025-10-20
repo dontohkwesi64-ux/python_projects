@@ -1,3 +1,8 @@
+dist64/
+build64/
+*.csv
+*.txt
+.DS_Store
 __pycache__/
 .idea/
 .vscode/
